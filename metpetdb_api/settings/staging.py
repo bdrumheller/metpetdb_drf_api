@@ -163,3 +163,11 @@ USE_TZ = True
 
 STATIC_URL = '/api/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+
+
+DJOSER = {
+    #'DOMAIN' : 'http://127.0.0.1:8000/api/',
+    'PASSWORD_RESET_CONFIRM_URL': '#/password/reset/confirm/{uid}/{token}',
+    #'SEND_ACTIVATION_EMAIL': True,
+
+}
