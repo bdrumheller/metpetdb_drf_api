@@ -7,6 +7,9 @@ from django.contrib.postgres.fields import ArrayField
 from apps.chemical_analyses.models import Element, Oxide
 
 
+class BulkUpload(models.Model):
+    pass
+
 class RockType(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(unique=True, max_length=100)
